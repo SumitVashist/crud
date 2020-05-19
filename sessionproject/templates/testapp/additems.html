@@ -1,0 +1,11 @@
+<<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+  {%block body_block%}
+  <h1>Add Item Form </h1>
+  <form method ='POST'>
+    {{form.as_p}}
+    {{%csrf_token}}
+    <input type ='submit' class = 'btn btn-primary btn-large' value = 'AddItems'>
+    </form>
+    <br>  
+    {%endblock%}
