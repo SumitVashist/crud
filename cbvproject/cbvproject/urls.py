@@ -20,6 +20,6 @@ from testapp import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.BookListView.as_view()),
-    url(r'^(?P<pk>\d+)/$', views.BookDetailView.as_view()),
+    url(r'^(?P<pk>\d+)/$', views.BookDetailView .as_view()),
 
 ]
